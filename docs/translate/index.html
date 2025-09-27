@@ -1,0 +1,70 @@
+<h1>欢迎来到徐语的词典(徐语-中文)</h1>
+<meta charset="utf-8">
+<style>
+#a{
+	width:400px;
+	height:300px;
+	background-color:yellow;
+	color:lime;
+	text-align:center;
+	}
+.b{
+	width:100px;
+	height:50px;
+	background-color:blue;
+	color:lime;
+	}
+</style>
+<div id="a">
+	<h2>为了您方便请先登录</h2>
+	<input onclick="A()" type="submit" value="本地假装登录" class="b">
+</div>
+<h3>字文翻译</h3>
+请输入字文:
+<input id="r"><br>
+<input onclick="B()" type="submit" value="翻译" class="b">
+<h3>文字翻译</h3>
+请在这里输入文字图片链接:
+<input id="rr"><br>
+<input onclick="C()" type="submit" value="翻译" class="b"><br>
+<b>copyright(c):2025 ✅✅✅✅(tm)</b>
+<script>
+function A(){
+	let a=localStorage.getItem("a")||"no";
+	if(a==="no"){
+		let b=prompt("请输入您的用户名:");
+		localStorage.setItem("a",b);
+		alert("你好"+b);
+	}else{
+		alert("你好"+a);
+	}
+}
+function B(){
+	let a=document.getElementById("r").value;
+	if(a==="ars"){
+		alert("虚拟域名注册系统");
+	}else if(a==="ast"){
+		alert("辣条");
+	}else if(a==="rft"){
+		alert("虚拟域名注册系统是一个能注册虚拟域名的系统");
+	}else if(a==="x"){
+		alert("徐氏");
+	}else{
+		alert("没有其他词汇了");
+	}
+}
+function C(){
+	let a=document.getElementById("r").value;
+	if(a==="https://www.24782bus.xyz/1.png"){
+		alert("虚拟域名注册系统");
+	}else if(a==="https://www.24782bus.xyz/2.png"){
+		alert("辣条");
+	}else if(a==="https://www.24782bus.xyz/3.png"){
+		alert("虚拟域名注册系统是一个能注册虚拟域名的系统");
+	}else if(a==="https://www.24782bus.xyz/x.png"){
+		alert("徐氏");
+	}else{
+		alert("没有其他词汇了");
+	}
+}
+</script>
