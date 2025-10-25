@@ -1,0 +1,23 @@
+<style>
+iframe{
+	display:none;
+	}
+h2{
+	color:lime;
+	}
+p{
+	display:none;
+	}
+</style>
+<h1>APP审核网页</h1>
+<h2>无需登录!!!!!!!!!!!!!</h2>
+<p1>记住:<b>所有APP均用人工审核</b>,不过我每天下午6:00都会审核一次,超过这个时间再注册者,只能等明天审核。</p1><br>
+<input type="submit" onclick="A()" value="点击即可开始"><br>
+<p style="color:blue;" id="a">请填写下面的Google Form:</p><br>
+<iframe id="b" src="https://docs.google.com/forms/d/e/1FAIpQLSe5UWF-iFE3m_byUqNMB6zWN9_RV0YKMtGtrf08Wk3iv7Ye3A/viewform?fbzx=-1513011585001543222" width="100%" height="1500px"></iframe><br>
+<script>
+function A(){
+	document.getElementById("a").style.display="block";
+	document.getElementById("b").style.display="block";
+}
+</script>
