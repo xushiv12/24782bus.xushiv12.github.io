@@ -1,2 +1,8 @@
-<input><hr>
-请使用语音输入，在上方的输入框里输入文字。<br>语音输入要使用你们家的输入法。
+<h1 id="a"></h1><input id="b"><button onclick="A()">将字变大</button><hr>
+请使用输入法，在上方的输入框里输入文字。<br>要使用你们家的输入法。
+<script>
+function A(){
+	let a=document.getElementById("b").value;
+	document.getElementById("a").textContent=a;
+}
+</script>
